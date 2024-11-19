@@ -1,0 +1,85 @@
+html{
+    background-color: black;
+}
+
+ul{
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    padding: 20px 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+hr{
+    border: 1px solid limegreen;
+    width: 100%;
+}
+
+
+
+/* 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .navbar {
+    background-color: #111;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin: 0 1em;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .home-section, .products-section, .about-section, .contact-section {
+    padding: 2em;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  form input, form textarea, form button {
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+  }
+   */
