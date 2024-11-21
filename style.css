@@ -15,6 +15,24 @@ ul{
     justify-content: center;
 }
 
+.container{
+    display: flex;
+    /* width: 90%;
+    justify-content: center; */
+}
+
+#firstName, #lastName{
+    display: flex;
+    /* width: 45%; */
+    flex-direction: row;
+}   
+
+/* .others {
+    display: flex;
+    flex-direction: column;
+} */
+
+
 a{
     padding: 20px 50px;
     color: white;
