@@ -17,27 +17,30 @@
             </header>
         </head>
         <body>
-            <h1>Have a <br>question?</h1>
-            <p>We're here to help! Fill out the form or reach us via phone or location. Our Customer Service Team is available to help you get the best experience out of Razer Products whether you have an issue about your order or looking for helpful tips.</p>
+            <section class="container">
+                <div style="width: 40%;">
+                    <h1>Have a <br>question?</h1>
+                    <p>We're here to help! Fill out the form or reach us via phone or location. Our Customer Service Team is available to help you get the best experience out of Razer Products whether you have an issue about your order or looking for helpful tips.</p>
 
-            <p>Everyone gets a personalized response, so please allow 24 hours during business hours for a reply. Our business hours are Monday-Friday from 9am to 5pm.</p>
+                    <p>Everyone gets a personalized response, so please allow 24 hours during business hours for a reply. Our business hours are Monday-Friday from 9am to 5pm.</p>
 
-            <img src="Image/Contact/phone.png" width="50px" height="50px"> 
-            <p>65052188</p>
-            <img src="Image/Contact/location.png" width="50px" height="50px">
-            <p>1 one-north Crescent, #02-01<br>Singapore 138538</p>
+                    <img src="Image/Contact/phone.png" width="50px" height="50px"> 
+                    <p>65052188</p>
+                    <img src="Image/Contact/location.png" width="50px" height="50px">
+                    <p>1 one-north Crescent, #02-01<br>Singapore 138538</p>
+                </div>
+                
+                <form>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name:" required><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name:"><br>
 
-            <form>
-                <label for="firstName">First Name:</label><br>
-                <input type="text" id="firstName" name="firstName" required><br>
-                <label for="lastName">Last Name:</label><br>
-                <input type="text" id="lastName" name="lastName"><br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" required></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
+                    <section class="others">
+                        <input type="text" id="email" name="email" placeholder="Email: " required><br>
+                        <textarea id="message" name="message" placeholder="Message: " required></textarea><br>
+                        <input type="submit" value="Submit">
+                    </section>
+                </form>
+            </section>
 
             <script src="script.js"></script>
         </body>
