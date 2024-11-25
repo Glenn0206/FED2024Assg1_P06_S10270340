@@ -16,13 +16,90 @@
             </header>
         </head>
         <body>
-            <div class="Image">
-                <img src="Image/Home/Pic1.png" width="90%">
-                <img src="Image/Home/Pic2.png" width="45%" height="10%">
-                <img src="Image/Home/Pic3.png" width="45%">
-                <img src="Image/Home/Pic4.png" width="45%">
-                <img src="Image/Home/Pic5.png" width="45%">
-            </div>
+            <section class="container">
+                <article class="image-section">
+                    <img src="Image/Home/Pic1.png" width="90%">
+                    <h3 class="find-out-more">Find Out More</h3>
+                </article>
+                <section style="display: flex; width: 90%;">
+                    <article class="image-section">
+                        <img src="Image/Home/Pic2.png">
+                        <h3 class="find-out-more">Find Out More</h3>
+                    </article>
+                    <article class="image-section">
+                        <img src="Image/Home/Pic3.png">
+                        <h3 class="find-out-more">Find Out More</h3>
+                    </article>
+                </section>
+                <section style="display: flex; width: 90%;">
+                    <article class="image-section">
+                        <img src="Image/Home/Pic4.png">
+                        <h3 class="find-out-more">Find Out More</h3>
+                    </article>
+                    <article class="image-section">
+                        <img src="Image/Home/Pic5.png">
+                        <h3 class="find-out-more">Find Out More</h3>
+                    </article>   
+                </section>            
+            </section>
             <script src="script.js"></script>
         </body>
     </html>
+    
+    <!--
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .image-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      position: relative;
+      text-align: center;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .find-out-more {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: #008CBA;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img src="Image/Home/Pic1.png" alt="Product Image">
+      <button class="find-out-more">Find Out More</button>
+    </div>
+    <section style="display: flex;">
+        <div class="image-section">
+            <img src="Image/Home/Pic2.png" alt="Product Image">
+            <button class="find-out-more">Find Out More</button>
+          </div>
+          <div class="image-section">
+            <img src="Image/Home/Pic3.png" alt="Product Image">
+            <button class="find-out-more">Find Out More</button>
+          </div>
+    </section>    
+  </div>
+</body>
+</html> -->
+<!-- 
