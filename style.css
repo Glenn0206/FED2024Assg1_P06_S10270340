@@ -24,7 +24,7 @@ b{
 /* Navigation Bar */
 header {
     background-color: #1f1f1f;
-    padding: 1rem;
+    padding: 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -41,7 +41,7 @@ header nav {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 20px;
 }
 
 .nav-links li {
@@ -69,7 +69,7 @@ header nav {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 70px 20px;
     background: linear-gradient(45deg, #00ff00, #004400);
     color: #000;
     width: 100%;
@@ -79,14 +79,14 @@ header nav {
 .product-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
+    gap: 20px;
+    padding: 40px;
 }
 
 .product-gallery article {
     text-align: center;
     background-color: #1f1f1f;
-    padding: 1rem;
+    padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;    
 }
