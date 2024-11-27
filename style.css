@@ -12,17 +12,16 @@ h1{
     margin: 0;
 }
 
-h2, h3{
+h2, h3, h4{
     display: flex;
     margin: 0;
 }
 
 p{
-    display: flex;
-    flex-direction: column;
     color: white;
     font-size: 20px;
     margin: 0;
+    white-space: normal;
 }
 
 b{
@@ -86,7 +85,7 @@ header nav {
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-self: center;
 }
 
 .contact-container {
@@ -97,11 +96,10 @@ header nav {
     padding: 2%;
 }
 
-
 /* Home Page */
 .hero {
     text-align: center;
-    padding: 70px 20px;
+    padding: 120px 25px;
     background: linear-gradient(45deg, #00ff00, #004400);
     color: #000;
 }
@@ -220,20 +218,23 @@ header nav {
     width: 60%;
 }
 
-
 /* Wrap text around image in Mangement Team */
-.wrap-text {
-    width: 100px;
-    height: 100px;
-    float: left;
-    padding: 10px;
-    padding-top: 10px;
-}
-
 .Management-team{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+}
+
+img.float-left {
+    float: left;
+    width: 20%;
+    margin: 0 15px 15px 0;
+}
+
+.wrap-text {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 hr{
