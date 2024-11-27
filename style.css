@@ -9,12 +9,20 @@ body {
 h1{
     color: limegreen;
     font-size: 50px;
+    margin: 0;
+}
+
+h2, h3{
+    display: flex;
+    margin: 0;
 }
 
 p{
+    display: flex;
+    flex-direction: column;
     color: white;
     font-size: 20px;
-    padding-left: 30px;
+    margin: 0;
 }
 
 b{
@@ -66,13 +74,79 @@ header nav {
     margin-top: -80px; 
 }
 
-/* Hero Section */
+/* Containers */
+.product-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.about-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2%;
+}
+
+
+/* Home Page */
 .hero {
     text-align: center;
     padding: 70px 20px;
     background: linear-gradient(45deg, #00ff00, #004400);
     color: #000;
-    width: 100%;
+}
+
+/* Home Gallery */
+.home-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2%;
+}
+
+.home-gallery article {
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+}
+
+.home-gallery article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.3);
+}
+
+.home-gallery img {
+    max-width: 100%;
+}
+
+/* Button */
+.find-out-more {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* Product Page */
+.product-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Product Gallery */
@@ -80,7 +154,15 @@ header nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 40px;
+    padding: 2%;
+}
+
+.product-gallery article h3, .product-gallery article p {
+    text-align: start;
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-gallery article {
@@ -100,6 +182,46 @@ header nav {
     max-width: 100%;
 }
 
+/* About Page */
+/* Video in About page */
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    /* min-height: 100%; */
+}
+
+#myBtn {
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+.content {
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    text-shadow: #000;
+    color: #f1f1f1;
+    padding: 0 20%;
+    width: 60%;
+}
+
+
+/* Wrap text around image in Mangement Team */
 .wrap-text {
     width: 100px;
     height: 100px;
@@ -119,126 +241,49 @@ hr{
     width: 90%;
 }
 
-.form-container{
-    display: flex;
-    width: 90%;
-    align-items: center;
-}
-
+/* Contact Pages */
 .Icon{
     display: flex;
     align-items: center;
 }
 
-input, textarea{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #fff;
-    background-color: #000;
-    color: #fff;
-}
-
-.others {
+/* Contact Form */
+form{
     display: flex;
     flex-direction: column;
 }
 
-.Image {
+#firstName, #lastName {
+    width: 45%;
+}
+  
+.name-fields {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    object-fit: contain;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-.container {
-    width: 100%;
-}
-
-.image-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.image-section img {
-    max-width: 100%;
-    height: auto;
-}
-
-.find-out-more {
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-}
-
-.product-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-}
-
-.about-us {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    text-align: end;
-}
-
-.container-headquarters {
-    position: relative;
-    text-align: right;
-    color: white;
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: -150px;
-    right: 16px;
-    text-align: right;
-  }
-
-#myVideo {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-
-.content {
-    position: absolute;
-    top: 80px;
-    text-align: center;
-    text-shadow: #000;
-    color: #f1f1f1;
-    padding-left: 40%;
-}
-
-#myBtn {
-    padding: absolute;
-    top: 20px;
-    left: 20px;
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
+  
+input, textarea {
+    padding: 12px;
+    border: 1;
+    border-color: #fff;
     background: #000;
-    color: #fff;
-    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 16px;
 }
-
-#myBtn:hover {
-    background: #ddd;
-    color: black;
+  
+textarea {
+    height: 120px;
+    resize: none;
+}
+  
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #00ff00;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
