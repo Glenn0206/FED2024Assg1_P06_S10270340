@@ -18,35 +18,32 @@
             </header>
         </head>
         <body>
-            <section class="form-container">
-                <div style="width: 40%;">
+            <section class="contact-container">
+                <article style="width: 40%;">
                     <h1>Have a<br>question?</h1>
-                    <p>We're here to help! Fill out the form or reach us via phone or location. Our Customer Service Team is available to help you get the best experience out of Razer Products whether you have an issue about your order or looking for helpful tips.</p>
-                    <p>Everyone gets a personalized response, so please allow 24 hours during business hours for a reply. Our business hours are Monday-Friday from 9am to 5pm.</p>
+                    <p style="padding-left: 0; padding-right: 10px;">We're here to help! Fill out the form or reach us via phone or location. Our Customer Service Team is available to help you get the best experience out of Razer Products whether you have an issue about your order or looking for helpful tips.<br><br>Everyone gets a personalized response, so please allow 24 hours during business hours for a reply. Our business hours are Monday-Friday from 9am to 5pm.</p>
 
                     <div class="Icon">
                         <img src="Image/Contact/phone.png" width="50px" height="50px"> 
                         <p>&emsp;65052188</p>
                     </div>
-
                     <div class="Icon">
                         <img src="Image/Contact/location.png" width="50px" height="50px">
                         <p>&emsp;1 one-north Crescent, #02-01<br>&emsp;Singapore 138538</p>
                     </div>        
-                </div>
-                
-                <form>
-                    <article style="display: flex;">
-                        <div><input type="text" id="firstName" name="firstName" placeholder="First Name:" required><br></div>
-                        <div><input type="text" id="lastName" name="lastName" placeholder="Last Name:"><br></div>
-                    </article>
-
-                    <input type="text" id="email" name="email" placeholder="Email: " required><br>
-                    <textarea id="message" name="message" placeholder="Message: " required></textarea><br>
-                    <input type="submit" value="Submit">
+                </article>
+                <form style="width: 40%;">
+                    <div class="name-fields">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name*" required>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Email*" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required>
+                    <input type="text" id="topic" name="topic" placeholder="Topic">
+                    <textarea id="message" name="message" placeholder="Message*" required></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
                 </form>
             </section>
-
             <script src="script.js"></script>
         </body>
     </html>
