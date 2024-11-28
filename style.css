@@ -31,7 +31,7 @@ b{
 /* Navigation Bar */
 header {
     background-color: #1f1f1f;
-    padding: 20px;
+    padding: 2%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -73,6 +73,41 @@ header nav {
     margin-top: -80px; 
 }
 
+/* Hamburger bar Navigation */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 /* Containers */
 .product-container {
     width: 90%;
@@ -96,6 +131,108 @@ header nav {
     padding: 2%;
 }
 
+.contact-container article {
+    width: 40%;
+}
+
+/* Mobile view */
+@media (max-width: 476px) {
+    .product-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+    
+    /* header nav{
+        display: none;
+    } */
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+    .contact-container {
+        flex-direction: column;
+        align-content: center;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact-container article {
+        width: 90%;
+    }
+    
+    /* .name-fields {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #firstName, #lastName {
+        width: 100%;
+    } */
+
+    /* h1{
+        color: limegreen;
+        font-size: 50px;
+        margin: 0;
+    } */
+    
+    h2, h3, h4{
+        display: flex;
+        margin: 0;
+    }
+    
+    p{
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        white-space: normal;
+    }
+
+}
+    
+.box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
 /* Home Page */
 .hero {
     text-align: center;
@@ -246,6 +383,7 @@ hr{
 .Icon{
     display: flex;
     align-items: center;
+    margin: 2% 0;
 }
 
 /* Contact Form */
