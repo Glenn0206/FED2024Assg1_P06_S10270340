@@ -22,12 +22,3 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
   document.body.style.backgroundColor = "white";
 }
-
-function toggleNav() {
-  var sidenav = document.getElementById("mySidenav");
-  if (sidenav.classList.contains("open")) {
-    sidenav.classList.remove("open");
-  } else {
-    sidenav.classList.add("open");
-  }
-}
