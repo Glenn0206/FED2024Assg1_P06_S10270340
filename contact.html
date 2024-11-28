@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <meta charset="utf-8">
+            <meta charset="utf-8" name="viewport" content="width=device-width">
             <title>Assignment 1</title>
             <link rel="stylesheet" href="style.css">
             <header>
@@ -19,7 +19,7 @@
         </head>
         <body>
             <section class="contact-container">
-                <article style="width: 40%;">
+                <article>
                     <h1>Have a<br>question?</h1>
                     <p style="padding-left: 0; padding-right: 10px;">We're here to help! Fill out the form or reach us via phone or location. Our Customer Service Team is available to help you get the best experience out of Razer Products whether you have an issue about your order or looking for helpful tips.<br><br>Everyone gets a personalized response, so please allow 24 hours during business hours for a reply. Our business hours are Monday-Friday from 9am to 5pm.</p>
 
@@ -32,17 +32,19 @@
                         <p>&emsp;1 one-north Crescent, #02-01<br>&emsp;Singapore 138538</p>
                     </div>        
                 </article>
-                <form style="width: 40%;">
-                    <div class="name-fields">
-                        <input type="text" id="firstName" name="firstName" placeholder="First Name*" required>
-                        <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required>
-                    </div>
-                    <input type="email" id="email" name="email" placeholder="Email*" required>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required>
-                    <input type="text" id="topic" name="topic" placeholder="Topic">
-                    <textarea id="message" name="message" placeholder="Message*" required></textarea>
-                    <button type="submit" class="submit-btn">Submit</button>
-                </form>
+                <article>
+                    <form>
+                        <div class="name-fields">
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name*" required>
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Email*" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required>
+                        <input type="text" id="topic" name="topic" placeholder="Topic">
+                        <textarea id="message" name="message" placeholder="Message*" required></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </article>
             </section>
             <script src="script.js"></script>
         </body>
