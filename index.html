@@ -6,7 +6,9 @@
             <link rel="stylesheet" href="style.css">
             <header>
                 <nav>
-                    <ul id="mySidenav" class="nav-links">
+                    <span class="hamburger" onclick="openNav()">&#9776;</span>
+                    <b>Home</b>
+                    <ul class="nav-links">
                         <li><a href="index.html"><img src="Image/Logo.png" width="30px"></a></li>
                         <li><a href="product.html#Mouse">Mouse</a></li>
                         <li><a href="product.html#Keyboard">Keyboard</a></li>
@@ -16,6 +18,15 @@
                     </ul>
                 </nav>
             </header>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="product.html#Mouse">Mouse</a>
+                <a href="product.html#Keyboard">Keyboard</a>
+                <a href="product.html#Laptop">Laptop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </head>
         <body>
             <section class="hero">
