@@ -6,6 +6,8 @@
             <link rel="stylesheet" href="style.css">
             <header>
                 <nav>
+                    <span class="hamburger" onclick="openNav()">&#9776;</span>
+                    <b>Contact Us</b>
                     <ul class="nav-links">
                         <li><a href="index.html"><img src="Image/Logo.png" width="30px"></a></li>
                         <li><a href="product.html#Mouse">Mouse</a></li>
@@ -16,12 +18,21 @@
                     </ul>
                 </nav>
             </header>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="product.html#Mouse">Mouse</a>
+                <a href="product.html#Keyboard">Keyboard</a>
+                <a href="product.html#Laptop">Laptop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </head>
         <body>
             <section class="contact-container">
                 <article>
                     <h1>Have a<br>question?</h1>
-                    <p style="padding-left: 0; padding-right: 10px;">We're here to help! Fill out the form or reach us via phone or location. Our Customer Service Team is available to help you get the best experience out of Razer Products whether you have an issue about your order or looking for helpful tips.<br><br>Everyone gets a personalized response, so please allow 24 hours during business hours for a reply. Our business hours are Monday-Friday from 9am to 5pm.</p>
+                    <p style="padding: 10px 10px 0 0;">We're here to help! Fill out the form or reach us via phone or location. Our Customer Service Team is available to help you get the best experience out of Razer Products whether you have an issue about your order or looking for helpful tips.<br><br>Everyone gets a personalized response, so please allow 24 hours during business hours for a reply. Our business hours are Monday-Friday from 9am to 5pm.</p>
 
                     <div class="Icon">
                         <img src="Image/Contact/phone.png" width="50px" height="50px"> 
