@@ -13,7 +13,7 @@ The design process focused on creating a user-friendly and visually appealing we
 - As a visitor, I want to contact the company, so that I can ask questions or provide feedback.
 
 ### Wireframes and Mockups
-[Wireframe](https://www.figma.com/design/fhPGLnvPCvWkQK7lsC71h2/FED_S10270340_Tan-Jun-Hao-Glenn?node-id=6-2&t=uP13iKbKfddifFrd-1/)
+[Figma](https://www.figma.com/design/fhPGLnvPCvWkQK7lsC71h2/FED_S10270340_Tan-Jun-Hao-Glenn?node-id=6-2&t=uP13iKbKfddifFrd-1/)
 
 ## Features
 
