@@ -1,68 +1,65 @@
 # FED2024Assg1_P06_S10270340
-FED Assignment 1
 
-# Your Project's Name
+This project is a website designed for showcasing and selling Razer products. The website includes various sections such as Home, Products, About, and Contact. It features a responsive design with a navigation bar that adapts to different screen sizes, including a hamburger menu for mobile views.
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
-
-Essentially, this part is your sales pitch.
- 
 ## Design Process
- 
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+The design process focused on creating a user-friendly and visually appealing website for potential customers of Razer products. The primary goal was to provide an easy-to-navigate interface that allows users to quickly find and learn about the products they are interested in.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url. 
+### User Stories
+- As a visitor, I want to view the homepage, so that I can see an overview of the website and its offerings.
+- As a visitor, I want to navigate to the products page, so that I can browse the available products.
+- As a visitor, I want to view detailed information about a specific product, so that I can make an informed purchasing decision.
+- As a visitor, I want to contact the company, so that I can ask questions or provide feedback.
+
+### Wireframes and Mockups
+[Wireframe](https://www.figma.com/design/fhPGLnvPCvWkQK7lsC71h2/FED_S10270340_Tan-Jun-Hao-Glenn?node-id=6-2&t=uP13iKbKfddifFrd-1/)
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- **Responsive Navigation Bar** - The navigation bar adapts to different screen sizes, including a hamburger menu for mobile views.
+- **Home Page** - Welcomes users with a hero section and a gallery of featured products.
+- **Products Page** - Displays a list of products with links to detailed information about each product.
+- **About Page** - Provides information about the company.
+- **Contact Page** - Includes a contact form for users to reach out to the company.
 
 ### Features Left to Implement
-- Another feature idea
+- **User Authentication** - Allow users to create accounts and log in to access personalized features.
+- **Shopping Cart** - Enable users to add products to a shopping cart and proceed to checkout.
+- **Product Reviews** - Allow users to leave reviews and ratings for products.
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+    - Used for structuring the content of the website.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+    - Used for styling the website and making it responsive.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - Used for adding interactivity to the website.
 
 ## Testing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+### Manual Testing
+1. **Contact Form Validation:**
+    1. Go to the "Contact Us" page.
+    2. Try to submit the empty form and verify that an error message about the required fields appears.
+    3. Fill in the form with valid data and submit it. Verify that the form is submitted successfully.
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+2. **Web Responsiveness:**
+    1. Resize the browser window to different widths and verify that the navigation bar adapts correctly.
+    2. Check that the hamburger menu appears on smaller screens and functions correctly.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+3. **Navigation Links:**
+    1. Click on each navigation link and verify that it takes you to the correct page.
 
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The content for the website was taken from [Razer Inc.](https://www.razer.com/).
 
 ### Media
-- The photos used in this site were obtained from ...
+- All images used in the project were sourced from [Razer Inc.](https://www.razer.com/).
 
 ### Acknowledgements
-
-- I received inspiration for this project from X
+- I received inspiration for this project from [Razer Inc.](https://www.razer.com/) and [W3schools](https://www.w3schools.com/)
