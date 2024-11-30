@@ -20,7 +20,7 @@ The design process focused on creating a user-friendly and visually appealing we
 ### Existing Features
 - **Responsive Navigation Bar** - The navigation bar adapts to different screen sizes, including a hamburger menu for mobile views.
 - **Home Page** - Welcomes users with a hero section and a gallery of featured products.
-- **Products Page** - Displays a list of products with links to detailed information about each product.
+- **Products Page** - Displays a list of products with detailed information about each product.
 - **About Page** - Provides information about the company.
 - **Contact Page** - Includes a contact form for users to reach out to the company.
 
