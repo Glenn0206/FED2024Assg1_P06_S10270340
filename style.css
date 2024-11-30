@@ -13,19 +13,22 @@ h1{
 }
 
 h2, h3, h4{
-    display: flex;
     margin: 0;
 }
 
 p{
-    color: white;
     font-size: 20px;
     margin: 0;
     white-space: normal;
 }
 
-b{
+b {
     font-size: 26px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -53,10 +56,6 @@ header nav {
     padding: 0;
 }
 
-.nav-links li {
-    display: inline;
-}
-
 .nav-links a {
     font-size:20px;
     padding: 10px 30px;
@@ -68,19 +67,6 @@ header nav {
 .nav-links a:hover {
     color: #00FF00;
     text-decoration: underline;
-}
-
-.section {
-    padding-top: 130px; 
-    margin-top: -115px; 
-}
-
-b {
-    font-size: 26px;
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 /* Hamburger bar Navigation */
@@ -135,14 +121,7 @@ b {
 }
 
 /* Containers */
-.product-container {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-}
-
-.about-container {
+.product-container, .about-container {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -208,11 +187,16 @@ b {
 /* Product Page */
 .product-header{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding-left: 2%;
     text-align: center;
 }
+
+/* Section spacing for header in Product.html */
+.section {
+    padding-top: 130px; 
+    margin-top: -115px; 
+}
+
 
 /* Product Gallery */
 .product-gallery {
@@ -276,7 +260,7 @@ b {
 
 .content {
     position: absolute;
-    top: 130px;
+    top: 100px;
     text-align: center;
     color: #f1f1f1;
     padding: 0 20%;
@@ -287,7 +271,6 @@ b {
 .Management-team{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .Management-team article{
@@ -296,13 +279,12 @@ b {
 
 img.float-left {
     float: left;
-    width: 20%;
-    margin: 0 15px 15px 0;
+    width: 30%;
+    margin: 0 15px 0 0;
 }
 
 .wrap-text {
     white-space: normal;
-    word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
@@ -349,7 +331,7 @@ textarea {
     height: 120px;
     resize: none;
 }
-  
+
 .submit-btn {
     width: 100%;
     padding: 12px;
@@ -360,84 +342,49 @@ textarea {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+/* Media Queries */
+@media screen and (max-width: 845px) {
     .nav-links {
         display: none;
     }
+
     .hamburger {
         display: block;
     }
+
     b {
         display: block;
     }
 
-    .firstName, .lastName {
-        display: block;
+    .content {
+        position: absolute;
+        top: 60px;
+    }
+
+    h1{
+        color: limegreen;
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+    
+    p{
+        font-size: 14px;
     }
 }
 
 /* Mobile view */
 @media screen and (max-width: 476px) {
-    h1{
-        color: limegreen;
-        font-size: 30px;
-        margin: 0;
-    }
-    
-    h2 {
-        display: flex;
-        font-size: 20px;
-        margin: 0;
-    }
-
-    h3 {
-        display: flex;
-        font-size: 16px;
-        margin: 0;
-    }
-
-    h4 {
-        display: flex;
-        font-size: smaller;
-        margin: 0;
-    }
-    
-    p{
-        color: white;
-        font-size: smaller;
-        margin: 0;
-        white-space: normal;
-    }
-
-    b {
-        display: block;
-        color: #fff;
-    }
-
-    /* Container */
-    .product-container {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 10px;
-    }
-
-    .about-container {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 10px;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .contact-container article {
-        width: 90%;
-    }
-
     /* Product Page */
     .section {
         padding-top: 60px; 
@@ -445,18 +392,17 @@ textarea {
     }
 
     /* About Us Page */
-    .content {
-        position: absolute;
-        top: 70px;
-        text-align: center;
-        color: #f1f1f1;
-        padding: 0 20%;
-        width: 60%;
+    #myBtn {
+        width: 100px;
     }
 
     .Management-team{
         display: block;
-        align-content: center;
+        justify-items: center;
+    }
+
+    .Management-team-header{
+        text-align: center;
     }
     
     .Management-team article{
@@ -469,14 +415,33 @@ textarea {
     }
 
     img.float-left {
-        display: block;
-        width: 50%;
+        width: 70%;
         margin: 0;
         padding-bottom: 10px;
     }
 
+    .wrap-text {
+        font-size: 11px;
+    }
+
+    /* Product Pages */
+    .product-gallery article h3, .product-gallery article p {
+        padding: 0;
+    }
+
     /* Contact Pages */
-    .Icon{
+    /* Container */
+    .contact-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact-container article {
+        width: 90%;
+    }
+
+    /* Margin for the icons */
+    .Icon-and-Details{
         margin: 5% 0;
     }
     
@@ -487,18 +452,5 @@ textarea {
 
     #firstName, #lastName {
         width: 100%;
-    }
-
-    #myBtn {
-        top: 20px;
-        left: 20px;
-        width: 100px;
-        font-size: 18px;
-        padding: 10px;
-        margin: 10px;
-        border: none;
-        background: #000;
-        color: #fff;
-        cursor: pointer;
     }
 }
