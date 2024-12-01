@@ -294,7 +294,7 @@ hr{
 }
 
 /* Contact Pages */
-.Icon{
+.Icon-and-Details{
     display: flex;
     align-items: center;
     margin: 2% 0;
